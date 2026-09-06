@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(251, 255, 249);
+}
+h1 {
+    /**color: cor do texto*/
+    color: rgb(0, 161, 54);
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background: black;
+    margin: 50px;
+    padding: 50px;
+    letter-spacing: 5px;
+}
+
+p {
+    color: rgb(0, 41, 14);
+    text-align: justify;
+    text-indent: 10px;
+    margin: 0px 60px 20px 60px;
+}
+
+.exemploBack {
+    height: 100px;
+    margin: 50px;
+    border: 3px solid black;
+    border-radius: 25px;
+    background:url("../img/backgrund.jpg");
+    background-size: cover;
+}
+
+.botao {
+    margin: 40%;
+    background: green;
+    color: white;
+    padding: 30px;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+.botao:hover{
+    background: rgb(0, 54, 0);
+}
+.teste {
+    max-width: 800px;
+    height: 250px;
+    margin-bottom: 50px;
+    background: lightgreen;
+}

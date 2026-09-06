@@ -1,0 +1,9 @@
+div.ex1 {
+    border: 1px solid red;
+    max-width: 800px;
+}
+
+div.ex2 {
+    border: 1px solid purple;
+    max-width: 800px;
+}
