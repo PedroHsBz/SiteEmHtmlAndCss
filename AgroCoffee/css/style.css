@@ -73,6 +73,7 @@ body {
     justify-content: center;
     background: rgb(255, 255, 255);
     padding-top: 100px;
+    margin-top: 20px;
 }
 
 .header p{
@@ -110,7 +111,7 @@ body {
     text-align: left;
 }
 
-#VoceAmcM {
+#txtLSheadLine {
     font-size: 25px;
 }
 .headline h2{
@@ -237,5 +238,5 @@ footer {
 .whats {
     position: fixed;
     bottom: 10px;
-    right: 10px;
+    right: 20px;
 }

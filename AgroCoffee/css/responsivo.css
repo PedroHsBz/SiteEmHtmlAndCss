@@ -4,14 +4,18 @@
     }
     .menu {
         display: flex;
-        flex: 1 1 50%;
+        flex: 1 1 100%;
         flex-wrap: row wrap;
         justify-content: center;
-        gap: 5px;
+        gap: 10px;
         width: 100%;
         margin: 0;
+        margin-left: 10%;
         align-items: center;
         padding: 15px 5%;
+    }
+    .botton {
+        margin-right: 10px;
     }
     .logo {
         margin: 0;
@@ -58,9 +62,10 @@
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 815px){
     .navbar {
         height: auto;
+        margin-bottom: 20px
     }
 
     .imgLogo {
@@ -69,13 +74,14 @@
 
     .menu {
         align-items: center;
-        gap: 1px;
+        gap: 0px;
         padding: 8px 3%;
     }
 
     .menu a {
         font-size: 16px;
         padding: 8px 10px;
+
     }
 
     #botton {
@@ -84,7 +90,7 @@
     }
 
     .header {
-        padding-top: 10px;
+        padding-top: 0px;
     }
 
     .headline {
@@ -149,7 +155,7 @@
     }
     .whats{
         display: flex;
-        height: auto;
-        right: 0;
+        height: 45px;
+        right: 5px;
     }
 }
