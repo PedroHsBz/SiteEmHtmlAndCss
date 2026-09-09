@@ -10,7 +10,6 @@
         gap: 10px;
         width: 100%;
         margin: 0;
-        margin-left: 10%;
         align-items: center;
         padding: 15px 5%;
     }
@@ -33,7 +32,7 @@
 
     .headline p{
         text-align: center;
-        
+        padding: 0%;
     }
     
     .img-headline {
@@ -74,6 +73,7 @@
 
     .menu {
         align-items: center;
+        margin-left: 0;
         gap: 0px;
         padding: 8px 3%;
     }
@@ -85,12 +85,12 @@
     }
 
     #botton {
-        margin: 0;
         padding: 8px 14px;
     }
 
     .header {
-        padding-top: 0px;
+        padding-top: 0;
+        margin-top: 0;
     }
 
     .headline {
