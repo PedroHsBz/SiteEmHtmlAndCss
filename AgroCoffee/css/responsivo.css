@@ -1,0 +1,155 @@
+@media screen and (max-width:1650px){
+    .navbar{
+        position: relative;
+    }
+    .menu {
+        display: flex;
+        flex: 1 1 50%;
+        flex-wrap: row wrap;
+        justify-content: center;
+        gap: 5px;
+        width: 100%;
+        margin: 0;
+        align-items: center;
+        padding: 15px 5%;
+    }
+    .logo {
+        margin: 0;
+        text-align: center;
+    }
+    .header {
+        padding-top: 50px;
+    }
+
+    .headline {
+        flex: 100%;
+        margin: 5%;
+        text-align: center;
+    }
+
+    .headline p{
+        text-align: center;
+        
+    }
+    
+    .img-headline {
+        flex: 100%;
+        margin: 5%;
+        text-align: center;
+    }
+
+    .servicos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card-text {
+        padding: 5px;
+    }
+    .whats {
+        display: block; 
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .navbar {
+        height: auto;
+    }
+
+    .imgLogo {
+        height: 70px;
+    }
+
+    .menu {
+        align-items: center;
+        gap: 1px;
+        padding: 8px 3%;
+    }
+
+    .menu a {
+        font-size: 16px;
+        padding: 8px 10px;
+    }
+
+    #botton {
+        margin: 0;
+        padding: 8px 14px;
+    }
+
+    .header {
+        padding-top: 10px;
+    }
+
+    .headline {
+        margin: 8% 6% 4%;
+    }
+
+    .headline h2 {
+        font-size: 15px ;
+        letter-spacing: 2px ;
+    }
+
+    .headline h2 + h2 {
+        font-size: 35px;
+    }
+
+    .headline p {
+        font-size: 16px;
+        line-height: 1.5;
+        padding-right: 0;
+    }
+
+    .buyNow-btn {
+        padding: 18px 22px;
+        font-size: 16px;
+    }
+
+    .img-headline {
+        margin: 4% 6% 0;
+    }
+
+    section {
+        margin-top: 45px;
+        padding: 4% 0;
+    }
+
+    section h2 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .servicos {
+        margin: 8% 0;
+        gap: 14px;
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+    .card-text,
+    .texto-oculto {
+        font-size: 15px;
+    }
+
+    .logo-rodape {
+        padding: 55px;
+        font-size: 22px;
+    }
+
+    footer {
+        padding: 25px;
+    }
+    .whats{
+        display: flex;
+        height: auto;
+        right: 0;
+    }
+}
