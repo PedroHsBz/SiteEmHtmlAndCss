@@ -13,8 +13,8 @@
         align-items: center;
         padding: 15px 5%;
     }
-    .botton {
-        margin-right: 10px;
+    #botton {
+        margin-right: 0px;
     }
     .logo {
         margin: 0;
@@ -61,7 +61,7 @@
     }
 }
 
-@media screen and (max-width: 815px){
+@media screen and (max-width: 730px){
     .navbar {
         height: auto;
         margin-bottom: 20px
@@ -79,12 +79,14 @@
     }
 
     .menu a {
-        font-size: 16px;
-        padding: 8px 10px;
+        text-align: center;
+        font-size: 15px;
+        padding: 20px 20px;
 
     }
 
     #botton {
+        margin-right: 0;
         padding: 8px 14px;
     }
 
@@ -100,6 +102,7 @@
     .headline h2 {
         font-size: 15px ;
         letter-spacing: 2px ;
+        margin-bottom: 10px;
     }
 
     .headline h2 + h2 {
@@ -123,6 +126,7 @@
 
     section {
         margin-top: 45px;
+        margin-bottom: 0;
         padding: 4% 0;
     }
 
@@ -157,5 +161,6 @@
         display: flex;
         height: 45px;
         right: 5px;
+        
     }
 }

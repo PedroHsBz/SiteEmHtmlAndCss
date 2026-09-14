@@ -11,12 +11,11 @@ body {
 .navbar{
     display: flex;
     flex-flow: row wrap;
-    height: 100px;
+    height: 100px;width: 100%;
     background: rgb(255, 255, 255);
-    justify-content: center;
     align-items: center;
     position: fixed;
-    width: 100%;
+    
 }
 
 .logo {
@@ -30,19 +29,20 @@ body {
 }
 
 .menu {
-    flex: 70%;
+    flex: 60%;
     text-align: right;
     padding: 35px;
+    margin-right: 7.2%;
 }
 
 .menu a {
     font-family: 'Inter', sans-serif;
-    font-style: normal;
+    font-style: oblique;
     font-weight: 400;
     color: #2d6a4f;
     text-decoration: none;
     font-size: 20px;
-    padding: 20px 16px;
+    padding: 20px 20px;
 }
 
 
@@ -56,33 +56,27 @@ body {
     padding: 10px 25px;
     color: white;
     border-radius: 5px;
-    margin-right: 11%;
     margin-left: 5%;
+    border-top: 0px solid #1b4332;
+
 }
 
 #botton:hover {
-    border: none;
     background: #2d6a4f;
 }
 
 .header {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: wrap;
     height: auto;
     align-items: center;
     justify-content: center;
     background: rgb(255, 255, 255);
-    padding-top: 100px;
-    margin-top: 20px;
-}
-
-.header p{
-    color: #2d6a4f;
-    font-size: 14px;
+    padding-top: 120px;
 }
 
 .buyNow-btn {
-    background: orange;
+    background: #f77f00;
     padding: 30px;
     color: white;
     border-radius: 5px;
@@ -105,15 +99,12 @@ body {
 
 .headline p{
     font-family: 'Inter';
-    font-size: large;
+    font-size: 20px;
     padding-right: 10%;
     color: #2d6a4f;
-    text-align: left;
+    text-align: justify;
 }
 
-#txtLSheadLine {
-    font-size: 25px;
-}
 .headline h2{
     font-family: 'Inter';
     font-style: normal;
@@ -122,24 +113,27 @@ body {
     padding: 0;
     margin: 0;
 }
+#txtLSheadLine {
+    font-size: 25px;
+}
 
 .img-headline {
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px;
     margin-right: 5%;
     flex: 40%; 
     align-items: center;
 }
 
 .imgHeadLine {
-    max-width: 90%;
-    border: 1px solid darkorange;
+    max-width: 92%;
+    border: 25px groove #f77f00;
     border-radius: 5px;
 }
 
 section {
     display: block;
     margin: 35px 5%;
-    padding: 5%;
+    padding: 2%;
     text-align: center;
     width: 90%;
 }
@@ -160,15 +154,28 @@ section h2 {
 }
 
 .card {
-    flex: 1 1 0;
+    flex: 1 0 25%;
     width: 100%;
-    height: auto;
+    height: 850px;
     padding: 20px;
     margin: 0;
     border: 1px solid #1b4332;
     border-radius: 10px;
     cursor: pointer;
 }
+
+.img-card {
+    width: 100%;
+    height: 500px;
+    border: #1b4332;
+    border-radius: 5px;
+}
+
+.img-card:hover {
+    display: block;    
+}
+
+
 
 .card:hover {
     background: #1b4332;
@@ -203,10 +210,6 @@ section h2 {
 .card:hover h3,
 .card:hover p {
     color: white;
-}
-
-.card:hover img{
-    display: none;
 }
 
 .card:hover .card-text {
