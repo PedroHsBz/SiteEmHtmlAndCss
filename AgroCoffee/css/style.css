@@ -12,7 +12,6 @@ body {
 
 /* ===== NAVBAR ===== */
 
-/* Barra de navegação fixa no topo, com logo à esquerda e menu à direita */
 .navbar{
     display: flex;
     flex-flow: row wrap;
@@ -23,18 +22,15 @@ body {
     position: fixed;
 }
 
-/* Área do logo, ocupa 20% do espaço da navbar */
 .logo {
     flex: 20%;
     margin-left: 10%;
 }
 
-/* Tamanho da imagem do logo */
 .imgLogo {
     height: 100px;
 }
 
-/* Área do menu, ocupa 60% do espaço e alinha o texto à direita */
 .menu {
     flex: 60%;
     text-align: right;
@@ -42,7 +38,6 @@ body {
     margin-right: 6.5%;
 }
 
-/* Estilo dos links do menu */
 .menu a {
     font-family: 'Inter', sans-serif;
     font-style: oblique;
@@ -53,13 +48,11 @@ body {
     padding: 20px 20px;
 }
 
-/* Efeito hover nos links do menu: muda cor e adiciona uma linha no topo */
 .menu a:hover{
     color: #1b4332;
     border-top: 4px solid #1b4332;
 }
 
-/* Botão "Fale Conosco" em destaque dentro do menu */
 #botton {
     background: #1b4332;
     padding: 10px 25px;
@@ -68,14 +61,12 @@ body {
     margin-left: 5%;
 }
 
-/* Hover do botão "Fale Conosco": escurece/clareia o fundo */
 #botton:hover {
     background: #2d6a4f;
 }
 
 /* ===== HEADER / HERO ===== */
 
-/* Seção principal (hero): título, texto e imagem lado a lado */
 .header {
     display: flex;
     flex-flow: wrap;
@@ -86,7 +77,6 @@ body {
     padding-top: 120px;
 }
 
-/* Botão de call-to-action "Compre Agora" */
 .buyNow-btn {
     background: #f77f00;
     padding: 30px;
@@ -99,18 +89,15 @@ body {
     text-transform: uppercase;
 }
 
-/* Hover do botão de call-to-action */
 .buyNow-btn:hover {
     background: darkgoldenrod;
 }
 
-/* Bloco de texto do hero (título + parágrafo + botão) */
 .headline {
     margin-left: 10%;
     flex: 40%;
 }
 
-/* Parágrafo de texto do hero */
 .headline p{
     font-family: 'Inter';
     font-size: 20px;
@@ -119,7 +106,6 @@ body {
     text-align: justify;
 }
 
-/* Título principal do hero */
 .headline h2{
     font-family: 'Inter';
     font-style: normal;
@@ -129,12 +115,10 @@ body {
     margin: 0;
 }
 
-/* Subtítulo pequeno acima do título principal */
 #txtLSheadLine {
     font-size: 25px;
 }
 
-/* Bloco da imagem do hero, centralizado */
 .img-headline {
     margin: 10px 0px;
     margin-right: 5%;
@@ -144,7 +128,6 @@ body {
     justify-content: center;
 }
 
-/* Imagem do hero, com moldura laranja em relevo */
 .imgHeadLine {
     max-width: 92%;
     border: 25px groove #f77f00;
@@ -153,7 +136,6 @@ body {
 
 /* ===== SEÇÕES GERAIS ===== */
 
-/* Espaçamento e centralização padrão de todas as <section> */
 section {
     display: block;
     margin: 30px 5%;
@@ -162,7 +144,6 @@ section {
     width: 90%;
 }
 
-/* Título de cada seção (ex: "O que nos oferecemos para você?") */
 section h2 {
     font-family: 'Inter';
     color: #1b4332;
@@ -172,7 +153,6 @@ section h2 {
 
 /* ===== CARDS DE SERVIÇOS ===== */
 
-/* Container dos cards, lado a lado com espaçamento entre eles */
 .servicos{
     display: flex;
     justify-content: center;
@@ -181,7 +161,6 @@ section h2 {
     margin: 1%;
 }
 
-/* Card individual de serviço */
 .card {
     flex: 1 0 25%;
     width: 100%;
@@ -193,7 +172,6 @@ section h2 {
     cursor: pointer;
 }
 
-/* Imagem dentro do card */
 .img-card {
     width: 100%;
     height: 500px;
@@ -201,7 +179,6 @@ section h2 {
     display: block;
 }
 
-/* Texto padrão do card (título + resumo curto), visível por padrão */
 .card h3{
     font-family: 'Inter';
     font-size: 30px;
@@ -214,7 +191,6 @@ section h2 {
     color: #2d6a4f;
 }
 
-/* Texto estendido do card (mostrado apenas no hover), escondido por padrão */
 .texto-oculto {
     font-family: 'Inter';
     font-size: 20px;
@@ -222,56 +198,47 @@ section h2 {
     display: none;
 }
 
-/* Hover do card: unifica em um único bloco tudo que acontece ao passar o mouse (antes estava dividido em duas regras .card:hover separadas no arquivo) */
 .card:hover {
     background: #1b4332;
     color: white;
     padding: 40px;
 }
 
-/* No hover, o título e o texto padrão ficam brancos para contrastar com o fundo escuro */
 .card:hover h3,
 .card:hover p {
     color: white;
 }
 
-/* No hover, esconde o texto curto padrão... */
 .card:hover .card-text {
     display: none;
 }
 
-/* ...e mostra o texto estendido no lugar */
 .card:hover .texto-oculto {
     display: block;
 }
 
 /* ===== RODAPÉ ===== */
 
-/* Rodapé com gradiente de cores e borda superior */
 footer {
     color: white;
     margin-top: 60px;
-    height: auto;
     background-image: linear-gradient(100deg, #1b4332, #2d6a4f, orange);
     text-align: center;
     border-top: 5px solid #1b4332;
 }
 
-/* Bloco com nome da marca e slogan no rodapé */
 .logo-rodape {
     padding: 65px;
     color: white;
     font-size: 20px;
 }
 
-/* Fonte do nome da marca no rodapé */
 .agencia {
     font-family: 'Inter';
 }
 
 /* ===== BOTÃO FLUTUANTE DO WHATSAPP ===== */
 
-/* Ícone do WhatsApp fixo no canto inferior direito da tela */
 .whats {
     position: fixed;
     bottom: 10px;
