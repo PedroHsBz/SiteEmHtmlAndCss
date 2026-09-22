@@ -57,29 +57,23 @@
     }
 
     .img-card {
-        width: 80%;
-        height: 600px;
-    }
-    
-    .img-card:hover {
-        justify-content: center;
-        margin-left: 75px;
-        width: 80%;
-        height: 600px;
+        width: 100%;
+        height: 10%;
     }
 
     .card-text {
         padding: 5px;
     }
+
     .whats {
         display: block; 
         position: fixed;
-        bottom: 10px;
-        right: 10px;
+        bottom: 5px;
+        right: 5px;
     }
 }
 
-@media screen and (max-width: 730px){
+@media screen and (max-width: 800px){
     .navbar {
         height: auto;
         margin-bottom: 20px;
@@ -92,12 +86,12 @@
     .menu {
         align-items: center;
         margin-left: 0;
-        gap: 0px;
+        
+        
         padding: 8px 3%;
     }
 
     .menu a {
-        justify-content: center;
         text-align: center;
         font-size: 15px;
         padding: 10px 20px;
@@ -172,10 +166,9 @@
 
     .card {
         flex: 1 0 100%;
-        height: auto;
         min-height: 400px;
+        height: auto;
         padding: 20px;
-        justify-content: center;
     }
 
     .img-card {
@@ -184,6 +177,7 @@
         border: #1b4332;
         border-radius: 5px;
     }
+
     .card-text,
     .texto-oculto {
         font-size: 15px;
