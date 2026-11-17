@@ -1,0 +1,733 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+:root {
+    --verdeEscuro: #1b4332;
+    --verde: #2d6a4f;
+    --laranja: #f77f00;
+    --laranjaHover: #d96f00;
+    --fundo: #f6f8f6;
+    --borda: #d8e2dc;
+    --vermelho: #b3261e;
+    --fundoVermelho: #fbe9e7;
+    --fundoVerde: #e3f2e9;
+    --amarelo: #8a6100;
+    --fundoAmarelo: #fff4d6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1120px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    color: var(--verdeEscuro);
+    background: white;
+}
+
+a {
+    color: var(--verde);
+}
+
+/* ===== NAVBAR ===== */
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid var(--borda);
+}
+
+.logo {
+    flex: 20%;
+    margin-left: 5%;
+}
+
+.imgLogo {
+    height: 90px;
+}
+
+.menu {
+    flex: 70%;
+    text-align: right;
+    margin-right: 5%;
+}
+
+.menu a {
+    color: var(--verde);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.menu a:hover {
+    color: var(--verdeEscuro);
+    border-top: 4px solid var(--verdeEscuro);
+}
+
+#botton {
+    background: var(--verdeEscuro);
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+#botton:hover {
+    background: var(--verde);
+    border-top: none;
+}
+
+/* Barra com os links do usuário logado */
+
+.menuUser {
+    background-color: var(--verdeEscuro);
+    color: white;
+    padding: 20px 0;
+    margin: 0%;
+}
+.barraUsuario {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 12px 5%;
+}
+
+.barraUsuario a {
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin: 0 20px;
+}
+
+.barraUsuario a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-line: 2px;
+}
+
+/* Menu ☰ do usuário: começa fechado; clicar no ☰ abre e fecha */
+.menuCheck {
+    display: none;            /* o checkbox nunca aparece */
+}
+
+.botaoMenu {
+    display: block;
+    font-size: 22px;
+    padding: 0 5%;
+    cursor: pointer;
+}
+
+.menuUser .barraUsuario {
+    display: none;            /* menu fechado */
+}
+
+/* ☰ clicado (checkbox marcado): o menu abre */
+.menuCheck:checked ~ .barraUsuario {
+    display: grid;
+}
+
+/* No celular o menu aberto mostra um link por linha */
+@media (max-width: 800px) {
+    .menuUser .barraUsuario {
+        grid-template-columns: 1fr;
+        padding: 10px 0 0;
+    }
+
+    .barraUsuario a {
+        margin: 0;
+        border-radius: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+}
+
+/* ===== HOME / SOBRE / SERVIÇOS ===== */
+
+.hero {
+     display: flex;
+    background: var(--bege);
+    padding: 64px 0;
+}
+
+.heroInterna {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.heroline {
+    flex: 55;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+#txtLSheadLine {
+    font-size: 25px;
+}
+
+.heroline h1 {
+    font-size: 44px;
+    line-height: 1.15;
+    text-align: left;
+    margin: 0;
+}
+
+.heroline p {
+    font-size: 18px;
+    max-width: 460px;
+    color: var(--verde);
+    text-align: left;
+}
+
+
+.heroImg {
+    flex: 45;
+    display: flex;           
+    justify-content: center; 
+    border-radius: 25px;
+}
+
+.heroImg img {
+   width: 100%;
+    max-width: 400px;
+}
+
+.buyNow-btn {
+    display: inline-block;
+    background: var(--laranja);
+    color: white;
+    padding: 20px 30px;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.buyNow-btn:hover {
+    background: var(--laranjaHover);
+}
+
+section {
+    text-align: center;
+}
+
+section h2 {
+    font-size: 40px;
+}
+
+.servicos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    flex: 1;
+    margin: 0 10px;
+    height: 350;
+    border: 1px solid var(--verdeEscuro);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.img-card {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card h3 {
+    font-size: 26px;
+    color: var(--verde);
+}
+
+.card-text {
+    font-size: 17px;
+    color: var(--verde);
+    text-align: left;
+    padding: 0 20px;
+
+}
+
+.texto-oculto {
+    display: none;
+    font-size: 17px;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.card:hover {
+    background: var(--verdeEscuro);
+    transform: translateY(-4px);
+    box-shadow:  0 8px 20px (#2d6a4f,.12);
+}
+
+.card:hover h3,
+.card:hover p {
+    color: white;
+}
+
+.card:hover .card-text {
+    display: none;
+}
+
+.card:hover .texto-oculto {
+    display: block;
+}
+
+/* ===== PÁGINAS DO SISTEMA ===== */
+
+.conteudo {
+    padding: 30px 5%;
+    min-height: 60vh;
+}
+
+.conteudo h2 {
+    font-size: 32px;
+    margin-top: 0;
+}
+
+.destaque {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Mensagens de sucesso e erro */
+.mensagem,
+.erro {
+    padding: 12px 15px;
+    border-radius: 5px;
+}
+
+.mensagem {
+    background: var(--fundoVerde);
+    color: var(--verdeEscuro);
+}
+
+.erro {
+    background: var(--fundoVermelho);
+    color: var(--vermelho);
+}
+
+/* Botões */
+.botao {
+    display: inline-block;
+    background: var(--laranja);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 18px;
+    font-size: 15px;
+    font-family: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background: var(--laranjaHover);
+}
+
+.botaoPerigo {
+    background: var(--vermelho);
+}
+
+.botaoSecundario {
+    background: var(--verde);
+}
+
+/* Tabelas */
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+}
+
+.tabela th,
+.tabela td {
+    border: 1px solid var(--borda);
+    padding: 10px;
+    text-align: left;
+}
+
+.tabela th {
+    background: var(--fundo);
+}
+
+/* Etiquetas de status */
+.status {
+    padding: 3px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.verde {
+    background: var(--fundoVerde);
+    color: var(--verdeEscuro);
+}
+
+.vermelho {
+    background: var(--fundoVermelho);
+    color: var(--vermelho);
+}
+
+.amarelo {
+    background: var(--fundoAmarelo);
+    color: var(--amarelo);
+}
+
+/* Formulários */
+.formulario {
+    max-width: auto;
+    margin: 20px 0;
+    padding: 25px;
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    background: var(--fundo);
+}
+
+.formulario label {
+    display: block;
+    margin: 12px 0 5px;
+    font-weight: 600;
+}
+
+.formulario a {
+    text-decoration: none;
+}
+
+.formulario a:hover {
+    font-weight: bold;
+    color: var(--verde);
+} 
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--borda);
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.formulario button {
+    margin: 20px 10px 0 0;
+}
+
+.formulario .checkbox input {
+    width: auto;
+}
+
+/* Campos de "cliente novo" no registro de pedido */
+.caixaNovo {
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px dashed var(--verde);
+    border-radius: 8px;
+    background: white;
+}
+
+.caixaNovo p {
+    margin: 0;
+}
+
+.fotoAtual {
+    width: 150px;
+    border-radius: 5px;
+}
+
+/* Concluir e cancelar lado a lado */
+.acoes {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.acoes .formulario {
+    flex: 1;
+}
+
+/* Filtros das listas */
+.filtros {
+    margin: 20px 0;
+}
+
+/* Caixa de busca das listas */
+.busca {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+.busca input[type="text"],
+.filtros input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid var(--borda);
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.filtros select {
+    padding: 9px;
+    border: 1px solid var(--borda);
+    border-radius: 5px;
+}
+
+.filtro {
+    display: inline-block;
+    padding: 8px 15px;
+    border: 1px solid var(--verde);
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.filtro.ativo {
+    background: var(--verde);
+    color: white;
+}
+
+/* Dia do pagamento + botão na lista de contas */
+.formPagamento {
+    display: flex;
+    gap: 8px;
+}
+
+.formPagamento input {
+    padding: 8px;
+    border: 1px solid var(--borda);
+    border-radius: 5px;
+}
+
+/* Atalhos da página inicial do usuário */
+.atalhos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.atalho {
+    flex: 1 1 250px;
+    padding: 25px;
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    background: var(--fundo);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.atalho:hover {
+    border-color: var(--laranja);
+}
+
+/* ===== RELATÓRIO ===== */
+
+.resumo {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.caixaResumo {
+    padding: 15px;
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    background: var(--fundo);
+}
+
+.caixaResumo span,
+.caixaResumo small {
+    display: block;
+    color: var(--verde);
+}
+
+.caixaResumo strong {
+    display: block;
+    font-size: 22px;
+    margin: 5px 0;
+}
+
+/* Na impressão some o menu, o rodapé e os botões */
+@media print {
+    body {
+        padding-top: 0;
+    }
+
+    .navbar,
+    header,
+    .menuUser,
+    footer,
+    .whats,
+    .naoImprimir {
+        display: none;
+    }
+}
+
+/* ===== CATÁLOGO ===== */
+
+.gradeProdutos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.cardProduto {
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cardProduto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.corpoCard {
+    padding: 15px;
+}
+
+.corpoCard h3 {
+    margin: 5px 0;
+}
+
+.categoria {
+    color: var(--verde);
+    font-size: 14px;
+    margin: 0;
+}
+
+.preco {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--laranja);
+}
+
+.semEstoque {
+    color: var(--vermelho);
+    font-weight: 600;
+}
+
+.detalheProduto {
+    display: flex;
+    gap: 30px;
+}
+
+.detalheProduto img {
+    width: 45%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.detalheProduto > div {
+    flex: 1;
+}
+
+.formPedido input {
+    width: 80px;
+    padding: 9px;
+    margin: 0 10px;
+}
+
+/* ===== RODAPÉ ===== */
+
+.rodape {
+    color: white;
+    margin-top: 60px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(100deg, var(--verdeEscuro), var(--verde), orange);
+    text-align: center;
+}
+
+.rodapeSup {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.tituloRodape {
+    margin: 40px 0 10px;
+}
+
+.rodape a {
+    color: white;
+}
+
+.rodapeInf {
+    border-top: 1px solid white;
+    padding-top: 15px;
+    font-size: 14px;
+}
+.logo-rodape {
+    padding: 40px;
+    font-size: 18px;
+}
+
+.whats {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+
+/* ===== CELULAR ===== */
+
+@media (max-width: 800px) {
+    body {
+        padding-top: 0;
+    }
+
+    .navbar {
+        position: static;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .menu {
+        text-align: center;
+        margin: 0 0 15px;
+    }
+
+    .menu a {
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    .headline h2 {
+        font-size: 36px;
+    }
+
+    .servicos,
+    .detalheProduto {
+        flex-direction: column;
+    }
+
+    .detalheProduto img {
+        width: 100%;
+    }
+
+    .tabela {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .rodapeSup {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,8 @@
+# Fotos de produtos enviadas pelo painel
+assets/img/produtos/
+
+# Senha do Gmail usada para enviar e-mail: não versionar
+config.local.php
+
+# Biblioteca PHPMailer (baixada à parte)
+lib/
